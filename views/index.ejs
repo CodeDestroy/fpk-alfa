@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="owl/owl.carousel.min.css">
+ 	<link rel="stylesheet" type="text/css" href="owl/owl.theme.default.min.css">
+
+	<title>ООО ФПК Альфа</title>
+</head>
+<body>
+<div class="wrapper">
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+ 
+    <a class="navbar-brand" href="#">
+      <img src="source/logo.png" alt="Альфа" >
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <a class="nav-link active" aria-current="page" href="#">О компании</a>
+        <a class="nav-link" href="#t1">Услуги</a>
+        <a class="nav-link" href="#t2">Адрес</a>
+        <a class="nav-link" href="#t3">Партнёры</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="main">
+  <div class="card text-bg-dark">
+    <img src="source/main.png" class="card-img" alt="...">
+      <div class="card-img-overlay">
+      	<div class="col-lg-5">
+        <p class="card-text">Мы предоставляем  решения, чтобы превратить вашу идею в цифровую реальность</p>
+        <button type="button" class="btn btn-secondary">Выбрать услугу</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+<section class="about-section text-center py-5" id="about">
+<div class=" container-fluid main px-4 px-lg-5">  
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-dark mb-4"><%= about_us_title%></h2>
+                        <p class="text-dark ">
+                            <%= about_us_text%>
+                        </p>
+                    </div>
+                </div>
+              <!--   <img class="img-fluid" src="assets/img/ipad.png" alt="..." /> -->
+            </div>
+        </section>
+
+<div class="container-fluid p-5 header">
+  <div class="row gx-5 align-items-center">
+      <div class="col-xs-12 col-lg-6 order-lg-2">
+          <div class=""><img class="img-fluid" src="source/sites2.png" alt="..." /></div>
+      </div>
+      <div class="col-xs-12 col-lg-6 order-lg-1">
+          <div class="rectangle ">
+              <h2 class="display-4 main-font-white" id="t1">Для офисов</h2>
+              <p class="main-font-white">Поставка, настройка, техническое обслуживание и ремонт любого компьютерного, цифрового, офисного и прочего оборудования.</p>
+              <p class="main-font-white">Поставка офисной, металлической и прочей мебели, канцтоваров, средств дезинфекции и прочих офисных принадлежностей.</p>
+              <p class="main-font-white">Монтаж пожарно-охранной сигнализации. Установка систем пожарной безопасности, сигнализаций и систем видеонаблюдения.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid p-5 header">
+  <div class="row gx-5 align-items-center">
+      <div class="col-xs-12 col-lg-5">
+          <div class=""><img class="img-fluid" src="source/f.png" alt="..." /></div>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+          <div class="rectangle">
+              <h2 class="display-4 main-font-white">Для компаний</h2>
+              <p class="main-font-white">Поставка, установка и настройка любого программного обеспечения.</p>
+              <p class="main-font-white">Прокладка и администрирование сетей. Написание и внедрение БД.</p>
+              <p class="main-font-white">Написание сайтов, интернет-магазинов, а также реализация online-проектов любой сложности.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid p-5 header">
+  <div class="row gx-5 align-items-center">
+      <div class="col-xs-12 col-lg-6 order-lg-2">
+          <div class=""><img class="img-fluid" width="900" height="900" src="source/sites4.png" alt="..." /></div>
+      </div>
+      <div class="col-xs-12 col-lg-6 order-lg-1">
+          <div class="rectangle">
+              <h2 class="display-4 main-font-white">CEO и маркетинг</h2>
+              <p class="main-font-white">CEO, продвижение и раскрутка в сети интернет. Проведение рекламных кампаний.</p>
+              <p class="main-font-white">Изготовление любой рекламной продукции, POS-материалов, выставочных стендов, сувенирной и полиграфической продукции.</p>
+              <p class="main-font-white">Разработка фирменного стиля, брендбука, логотипа.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid adress p-4">
+	<div class="adress-title p-2" id="t2">Где мы находимся?</div>
+<div class="row">
+	<div class="cont col-xl-4 col-md-5 col-12 py-4"><div class="adress-cont"><div class="adress-txt_title">Адрес</div> <div class="adress-text"><%=address %></div>
+<div class="contact_number  pt-2">
+			  	<div class="cnt_number" style="font-weight:800;">Телефоны:
+            <% for(var i = 0; i < phones.length; i++) {%>
+              <a href="tel: +74732222566" class="cnt_number"><%=phones[i].phone %></a>
+            <%} %>
+            <!-- <a href="tel: +74732222566" class="cnt_number"> +74732222566</a> -->
+          </div> 
+			  	<div class="cnt_number" style="font-weight:800;">E-mail: <a href="mailto:fpk-alfa@mail.ru?subject=E-mail" class="cnt_number"> fpk-alfa@mail.ru</a></div> 
+			  </div>
+
+
+</div></div>
+	<div class="adress-map col-xl-8 col-md-7 col-12 py-2"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b16abd540cef1bbffae1545a6bfa9f19678948704574710f780916784a20a75&amp;width=100%&amp;height=476&amp;lang=ru_RU&amp;scroll=true"></script></div>
+</div>
+</div>
+<div class="container-fluid cont_lic p-5">
+	<div class="lic-title p-2" id="t3">Наши лицензии</div>
+	 <div class="owl-carousel carouselOne  my-5" >
+         	   	<div class="o-item">
+         	   		 	<div class="card lic-item" style="width: 18rem;">
+  <img  class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+         	   	</div >
+         	   		<div class="o-item">
+         	   			<div class="card lic-item" style="width: 18rem;">
+  <img  class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+         	   	</div>
+         	   		<div class="o-item">
+         	   		 	<div class="card  lic-item" style="width: 18rem;">
+  <img  class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+         	   	</div>
+
+         	   </div>
+	
+	
+</div>
+<div class="container-fluid p-5 parth-cont">
+	<div class="parth-title p-2">Наши партнеры</div>
+	<div class="owl-carousel carouselTwo  my-5" >
+         	   	<div class="o-item">
+         	   		 <img src="source/prt4.png">
+         	   	</div >
+         	   		<div class="o-item">
+         	   		 <img src="source/prt3.png">
+         	   	</div>
+         	   		<div class="o-item" style="padding-top: 3.5em;">
+         	   		 <img src="source/prt2.png">
+         	   	</div>
+         	   		<div class="o-item">
+         	   		 <img src="source/prt1.png">
+         	   	</div>
+         	   </div>
+</div>
+<footer class="footer container-fluid p-5">
+ 	 <div class="owl-carousel carouselThree  my-5" >
+         	   	<div class="o-item">
+         	   		<div class="footer-item">
+         	   			<div class="footer-pic p-1" style="width: 65px; height: 60px;"><img src="source/geo.svg"></div>
+         	   			<div class="footer-title">Адрес</div>
+         	   			<div class="footer-text" style="font-size: 0.9em;"><%=address %></div>
+         	   			<!-- <div class="footer-text" style="font-size: 0.9em;">ул.Сакко и Ванцетти, дом 61</div> -->
+         	   		</div>
+         	   	</div >
+         	   		<div class="o-item" >
+         	   			<div class="footer-item">
+         	   			<div class="footer-pic p-1" style="width: 65px; height: 60px;"><img src="source/mail.svg"></div>
+         	   			<div class="footer-title">EMAIL</div>
+         	   			<div class="footer-text"><a href="mailto:fpk-alfa@mail.ru?subject=E-mail" class="footer_number"> fpk-alfa@mail.ru</a></div>
+         	   		</div>
+         	   	</div>
+         	   		<div class="o-item">
+         	   		 	<div class="footer-item">
+         	   			<div class="footer-pic p-1" style="width: 45px; height: 73px;"><img src="source/call.svg"></div>
+         	   			<div class="footer-title">ТЕЛЕФОНЫ</div>
+                    <% for(var i = 0; i < phones.length; i++) {%>
+                      <div class="footer-text"><a href="tel: +74732222566" class="footer_number"><%=phones[i].phone %></a></div>
+                    <%} %>
+         	   		</div>
+         	   	</div>
+
+         	   </div>
+         	   <hr class="footer-line">
+         	   <div class="footer-end p-3">
+         	   	<div>"ООО "ФПК Альфа"</div>
+         	   	<div>Все права защищены</div> 
+         	</div>
+</footer>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script src="owl/owl.carousel.js"></script>
+<script type="text/javascript">
+
+	 $(document).ready(function() {
+               $('.carouselOne').owlCarousel({
+
+                    responsive:{ 
+                        0:{
+                            items:1
+                        },
+                        465:{
+                            items:2
+                        },
+                        1024:{
+                            items:3
+                        },
+                         
+                    }
+                });
+            });
+</script>
+<script type="text/javascript">
+
+	 $(document).ready(function() {
+               $('.carouselTwo').owlCarousel({
+
+                    responsive:{ 
+                        0:{
+                            items:1
+                        },
+                        465:{
+                            items:2
+                        },
+                         800:{
+                            items:3
+                        },
+                        1150:{
+                            items:4
+                        },
+                         
+                    }
+                });
+            });
+</script>
+<script type="text/javascript">
+
+	 $(document).ready(function() {
+               $('.carouselThree').owlCarousel({
+
+                   responsive:{ 
+                        0:{
+                            items:1
+                        },
+                        465:{
+                            items:2
+                        },
+                        1024:{
+                            items:3
+                        },
+                         
+                    }
+                });
+            });
+</script>
+</body>  
+
+
+
+
